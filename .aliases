@@ -10,10 +10,9 @@ alias -- -="cd -"
 alias d="cd ~/Documents/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
-alias p="cd ~/Projects"
+alias p="cd ~/projects"
 alias g="git"
 alias h="history"
-alias j="jobs"
 alias v="vim"
 alias m="mate ."
 alias s="subl ."
@@ -85,6 +84,9 @@ alias c="tr -d '\n' | pbcopy"
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 
+# File size
+alias fs="stat -c \"%s bytes\""
+
 # ROT13-encode text. Works for decoding, too! ;)
 alias rot13='tr a-zA-Z n-za-mN-ZA-M'
 
@@ -133,3 +135,6 @@ done
 alias stfu="osascript -e 'set volume output muted true'"
 alias pumpitup="osascript -e 'set volume 7'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
+
+#process search
+alias pss="ps aux | grep"
