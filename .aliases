@@ -138,3 +138,6 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 #process search
 alias pss="ps aux | grep"
+
+#pbcopy without new line
+alias pbc='tr -d "\n" | pbcopy'

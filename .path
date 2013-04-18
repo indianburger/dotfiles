@@ -1,0 +1,3 @@
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+#mongodb
+export PATH=$PATH:~/apps/mongodb-osx-x86_64-1.8.1/bin
