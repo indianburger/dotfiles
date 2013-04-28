@@ -10,11 +10,18 @@ set encoding=utf-8 nobomb
 let mapleader=","
 " Don’t add empty newlines at the end of files
 set binary
-set noeol
 " Centralize backups, swapfiles and undo history
 set backup
 set backupdir=~/.vim/backup
 set directory=~/.vim/tmp
+
+"split
+set splitbelow
+set splitright
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 if exists("&undodir")
 	set undodir=~/.vim/undo
 endif
@@ -81,10 +88,10 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'gregsexton/MatchTag'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'nelstrom/vim-visual-star-search'
+Bundle 'Lokaltog/vim-easymotion'
 
 let g:ctrlp_root_markers = ['perm.acl']
 map <C-n> :NERDTreeToggle<CR>
-map <C-N> :NERDTreeFind<CR>
 let g:Powerline_symbols = 'fancy'
 set laststatus=2
 let g:syntastic_javascript_checkers = ['jshint']
