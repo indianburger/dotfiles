@@ -76,3 +76,6 @@
 
 [push]
 	default = simple
+[user]
+	email = aravindr85@gmail.com
+	name = Aravind Ramanathan

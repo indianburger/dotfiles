@@ -1,3 +1,6 @@
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+#android
+export PATH=/usr/local/opt/android-sdk:$PATH
 #mongodb
 export PATH=$PATH:~/apps/mongodb-osx-x86_64-1.8.1/bin
+export ANDROID_HOME=/usr/local/opt/android-sdk
